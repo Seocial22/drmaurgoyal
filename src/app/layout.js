@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="bniGqcb6lAS--Rg7LOlEfz6y46F-nTwr-R9q_PszKS4" />
+        <meta name="google-site-verification" content="h9QmbARhppMAA6jKfw7_e6EseEfuTWexQ6AzdkYwWOk" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TYC6WTHMGF"
           strategy="afterInteractive"
