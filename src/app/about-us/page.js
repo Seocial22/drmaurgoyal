@@ -66,20 +66,54 @@ export const metadata = {
   },
 };
 
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://drmayurkumargoyal.com/about-us",
+  "name": "About Dr. Mayur Kumar Goyal",
+  "description":
+    "Learn about Dr. Mayur Kumar Goyal, a trusted Pediatrician and Child Specialist in Ajmer providing expert healthcare for newborns, infants, children, and adolescents.",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Dr. Mayur Kumar Goyal",
+    "jobTitle": "Pediatrician",
+    "image": "https://drmayurkumargoyal.com/images/about-dr-mayur.jpg",
+    "url": "https://drmayurkumargoyal.com/about-us",
+    "worksFor": {
+      "@type": "Hospital",
+      "name": "Mayur Children Hospital"
+    },
+    "knowsAbout": [
+      "Pediatrics",
+      "Child Care",
+      "Newborn Care",
+      "Vaccination"
+    ]
+  }
+};
+
 export default function AboutUs() {
   return (
     <>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutPageSchema),
+        }}
+      />
+
       <AboutHero />
-      <hr className="text-[#1018281f]"/>
-      <AboutDoctor/>
-      <hr className="text-[#1018281f]"/>
+      <hr className="text-[#1018281f]" />
+      <AboutDoctor />
+      <hr className="text-[#1018281f]" />
       {/* <AboutMission /> */}
-      <hr className="text-[#1018281f]"/>
+      <hr className="text-[#1018281f]" />
       <div className="bg-white">
-      {/* <AboutCoreValues/> */}
+        {/* <AboutCoreValues/> */}
       </div>
-      <hr className="text-[#1018281f] "/>
-      <CarePartnerComponent/>
+      <hr className="text-[#1018281f] " />
+      <CarePartnerComponent />
     </>
   );
 }

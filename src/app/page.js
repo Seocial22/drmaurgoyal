@@ -5,9 +5,9 @@ import FAQSection from "@/components/Faq";
 import HeroSection from "@/components/HeroSection";
 import ImageGallerySlider from "@/components/ImageGallerySlider";
 import PatientReviews from "@/components/PatientReviews";
- 
 
-  export const metadata = {
+
+export const metadata = {
   title: 'Best Pediatrician in Ajmer | Dr. Mayur Kumar Goyal',
   description: 'Dr. Mayur Kumar Goyal, leading pediatrician and neonatologist in Ajmer, offers expert newborn care, vaccinations, and child health services at Mayur Childern Hospital.',
   keywords: [
@@ -63,44 +63,80 @@ import PatientReviews from "@/components/PatientReviews";
   },
 };
 
+const homePageSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Mayur Children Hospital",
+  "url": "https://www.drmayurkumargoyal.com",
+  "image": "https://www.drmayurkumargoyal.com/images/dr-mayur-profile.jpg",
+  "description":
+    "Mayur Children Hospital in Ajmer provides expert pediatric and neonatal care under the guidance of Dr. Mayur Kumar Goyal.",
+  "medicalSpecialty": "Pediatrics",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ajmer",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN"
+  },
+  "physician": {
+    "@type": "Physician",
+    "name": "Dr. Mayur Kumar Goyal",
+    "jobTitle": "Pediatrician & Neonatologist",
+    "url": "https://www.drmayurkumargoyal.com",
+    "image": "https://www.drmayurkumargoyal.com/images/dr-mayur-profile.jpg",
+    "worksFor": {
+      "@type": "MedicalClinic",
+      "name": "Mayur Children Hospital"
+    }
+  }
+};
+
 export default function Home() {
   return (
-  <div className="">
-    <HeroSection/>
-     <hr className="text-[#1018281f]"/>
+    <div className="">
 
-     <div className="relative bg-white w-full mx-auto">
-  {/* Background image with minimal overlay */}
-  <div className="absolute inset-0 z-0">
-    <div
-      className="w-full h-full bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/images/doctorbackground.webp')", opacity: 0.2 }}
-    ></div>
-  </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(homePageSchema),
+        }}
+      />
 
-  {/* Content section */}
-  <div className="relative z-10">
-    <AboutMayur />
-  </div>
-</div>
+      <HeroSection />
+      <hr className="text-[#1018281f]" />
+
+      <div className="relative bg-white w-full mx-auto">
+        {/* Background image with minimal overlay */}
+        <div className="absolute inset-0 z-0">
+          <div
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/doctorbackground.webp')", opacity: 0.2 }}
+          ></div>
+        </div>
+
+        {/* Content section */}
+        <div className="relative z-10">
+          <AboutMayur />
+        </div>
+      </div>
 
 
 
 
-    <hr className="text-[#1018281f]"/>
-    <DoctorProfileSection/>
-    <hr className="text-[#1018281f]"/>
-    <PatientReviews/>
-   
-    {/* <hr className="text-[#1018281f]"/>
+      <hr className="text-[#1018281f]" />
+      <DoctorProfileSection />
+      <hr className="text-[#1018281f]" />
+      <PatientReviews />
+
+      {/* <hr className="text-[#1018281f]"/>
     <PediatricTherapySection/>  */}
-    <hr className="text-[#1018281f]"/>
-    <ImageGallerySlider/>
-    <hr className="text-[#1018281f]"/>
-   
-    <div className="relative bg-white w-full mx-auto">
-  {/* Background image with padding */}
-  <div className="absolute 
+      <hr className="text-[#1018281f]" />
+      <ImageGallerySlider />
+      <hr className="text-[#1018281f]" />
+
+      <div className="relative bg-white w-full mx-auto">
+        {/* Background image with padding */}
+        <div className="absolute 
   inset-x-0 
   top-[-15px]
   bottom-0  
@@ -112,12 +148,12 @@ export default function Home() {
   bg-no-repeat 
   z-0"  />
 
-  
-  <div className="relative z-10">
-  <FAQSection/>
-  </div>
 
+        <div className="relative z-10">
+          <FAQSection />
+        </div>
+
+      </div>
     </div>
-  </div>
   );
 }
