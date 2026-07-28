@@ -9,6 +9,11 @@ import { db } from '@/firebase/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 import { getDirectImageUrl } from '@/lib/utils';
 
+const SITE_URL = "https://www.drmayurkumargoyal.com";
+const PUBLISHER_NAME = "Dr. Mayur Goyal";
+const PUBLISHER_LOGO = "https://www.drmayurkumargoyal.com/images/logo.png";
+const DEFAULT_IMAGE = "/images/mayurchildcarecenter.png";
+
 // Function to read blogs data
 async function getBlogs() {
   // Fetch local blogs
@@ -35,6 +40,14 @@ async function getBlogs() {
   return [...localBlogs, ...firestoreBlogs];
 }
 
+// Helper: turn a relative or absolute image path into a guaranteed absolute URL
+function toAbsoluteUrl(url) {
+  const directUrl = getDirectImageUrl(url);
+  if (!directUrl) return `${SITE_URL}${DEFAULT_IMAGE}`;
+  if (directUrl.startsWith("http://") || directUrl.startsWith("https://")) return directUrl;
+  return `${SITE_URL}${directUrl.startsWith("/") ? "" : "/"}${directUrl}`;
+}
+
 // Generate metadata for each blog page
 export async function generateMetadata({ params }) {
   // We need to await the params object first
@@ -50,18 +63,26 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const description =
+    blog.metaDescription || blog.excerpt || blog.content.substring(0, 160);
+  const absoluteImage = toAbsoluteUrl(blog.image);
+  const canonicalUrl = blog.canonicalUrl || `${SITE_URL}/blog/${blog.slug}`;
+
   return {
     title: `${blog.title}`,
-    description: blog.metaDescription || blog.excerpt || blog.content.substring(0, 160),
+    description,
     keywords: blog.tags,
     openGraph: {
       title: blog.title,
-      description: blog.metaDescription || blog.excerpt || blog.content.substring(0, 160),
+      description,
       type: 'article',
-      url: `https://drmayurkumargoyal.com/blog/${blog.slug}`,
+      url: `${SITE_URL}/blog/${blog.slug}`,
+      publishedTime: blog.date,
+      modifiedTime: blog.updatedAt || blog.date,
+      authors: [blog.author || PUBLISHER_NAME],
       images: [
         {
-          url: getDirectImageUrl(blog.image) || '/images/mayurchildcarecenter.webp',
+          url: absoluteImage,
           width: 1200,
           height: 630,
           alt: blog.alt || blog.title,
@@ -69,15 +90,72 @@ export async function generateMetadata({ params }) {
       ],
     },
     alternates: {
-      canonical: `https://www.drmayurkumargoyal.com/blog/${blog.slug}`,
+      canonical: canonicalUrl,
     },
-
     twitter: {
       card: 'summary_large_image',
       title: blog.title,
-      description: blog.metaDescription || blog.excerpt || blog.content.substring(0, 160),
-      images: [getDirectImageUrl(blog.image) || '/images/mayurchildcarecenter.webp'],
+      description,
+      images: [absoluteImage],
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+      },
+    },
+    other: {
+      "application-name": PUBLISHER_NAME,
+      author: PUBLISHER_NAME,
+      Publisher: PUBLISHER_NAME,
+      "publisher-url": SITE_URL,
+      generator: "Next.js",
+      "theme-color": "#ffffff",
+    },
+  };
+}
+
+// Builds the schema.org Article JSON-LD object for a single blog entry
+function buildBlogJsonLd(blog) {
+  const absoluteImageUrl = toAbsoluteUrl(blog.image);
+  const canonicalUrl = blog.canonicalUrl || `${SITE_URL}/blog/${blog.slug}`;
+  const description =
+    blog.metaDescription || blog.excerpt || blog.content.substring(0, 160);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${SITE_URL}/blog/${blog.slug}#article`,
+    headline: blog.heading || blog.title,
+    name: blog.title,
+    description,
+    image: [absoluteImageUrl],
+    author: {
+      "@type": "Person",
+      name: blog.author,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: PUBLISHER_NAME,
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: PUBLISHER_LOGO,
+      },
+    },
+    datePublished: blog.date,
+    dateModified: blog.updatedAt || blog.date,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+    keywords: Array.isArray(blog.tags) ? blog.tags.join(", ") : undefined,
+    inLanguage: "en",
+    url: canonicalUrl,
   };
 }
 
@@ -211,12 +289,21 @@ export default async function SingleBlogPage({ params }) {
     day: 'numeric'
   });
 
+  // Build the JSON-LD structured data for this blog post
+  const jsonLd = buildBlogJsonLd(blog);
+
   return (
     <article className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-50">
+      {/* JSON-LD structured data for SEO (Article schema) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero section with image */}
       <div className="relative w-full h-80 md:h-136 max-w-8xl mx-auto ">
         <Image
-          src={getDirectImageUrl(blog.image) || '/images/mayurchildcarecenter.webp'}
+          src={getDirectImageUrl(blog.image) || DEFAULT_IMAGE}
           alt={blog.alt || blog.title}
           fill
           priority
