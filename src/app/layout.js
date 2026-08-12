@@ -9,6 +9,15 @@ import NewYearPopup from '@/components/NewYearPopup';
 
 // Define the default metadata as a variable export
 export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   metadataBase: new URL('https://drmayurkumargoyal.com'),
   title: {
     template: '%s',
@@ -32,6 +41,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="robots" content="noindex, nofollow, noarchive" />
+        
+        
         <meta name="google-site-verification" content="bniGqcb6lAS--Rg7LOlEfz6y46F-nTwr-R9q_PszKS4" />
         <meta name="google-site-verification" content="h9QmbARhppMAA6jKfw7_e6EseEfuTWexQ6AzdkYwWOk" />
         <meta name="google-site-verification" content="b3vyPuuSga8zutQF4Xvs1JrFtxC4qznp1ukGU-pvuAQ" />
