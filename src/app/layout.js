@@ -9,6 +9,7 @@ import NewYearPopup from '@/components/NewYearPopup';
 
 // Define the default metadata as a variable export
 export const metadata = {
+
   robots: {
     index: false,
     follow: false,
@@ -35,6 +36,11 @@ export const metadata = {
     'Mayur Childern Hospital',
     'Ajmer pediatric clinic',
   ],
+  robots: {
+    index: false,
+    follow: false,
+  },
+
 };
 
 export default function RootLayout({ children }) {
