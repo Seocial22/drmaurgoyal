@@ -1,10 +1,11 @@
+import dynamic from 'next/dynamic';
 import AboutMayur from "@/components/AboutMayur";
 import DoctorProfileSection from "@/components/DoctorProfileSection";
 import FAQSection from "@/components/Faq";
-
 import HeroSection from "@/components/HeroSection";
-import ImageGallerySlider from "@/components/ImageGallerySlider";
-import PatientReviews from "@/components/PatientReviews";
+
+const PatientReviews = dynamic(() => import("@/components/PatientReviews"));
+const ImageGallerySlider = dynamic(() => import("@/components/ImageGallerySlider"));
 
 
 export const metadata = {

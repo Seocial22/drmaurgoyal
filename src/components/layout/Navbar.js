@@ -266,11 +266,10 @@ const Navbar = () => {
                   <Image
                     src="/images/NewLogo.jpeg"
                     alt="Mayur Childern Hospital Logo"
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     priority
                     className="object-contain rounded-full w-full h-full"
-                    unoptimized={true}
                   />
                 </div>
                 <div className="ml-2">

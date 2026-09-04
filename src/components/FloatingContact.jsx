@@ -15,15 +15,15 @@ const FloatingContact = () => {
   const whatsappNumber = '+919024988677';
 
   useEffect(() => {
-    // Show notification after 3 seconds
+    // Show notification after 6 seconds
     const showTimer = setTimeout(() => {
       setShowNotification(true);
-    }, 3000);
+    }, 6000);
 
-    // Hide notification after 8 seconds (3s delay + 5s display)
+    // Hide notification after 12 seconds (6s delay + 6s display)
     const hideTimer = setTimeout(() => {
       setShowNotification(false);
-    }, 8000);
+    }, 12000);
 
     // Clean up timers on component unmount
     return () => {
@@ -66,7 +66,7 @@ const FloatingContact = () => {
                   <p className="text-sm text-gray-600 mt-1">Have questions about our services?</p>
                   <button
                     onClick={handleWhatsAppClick}
-                    className="mt-2 text-sm font-medium text-green-600 hover:text-green-800"
+                    className="mt-2 text-sm font-semibold text-green-700 hover:text-green-900"
                   >
                     Reply now
                   </button>

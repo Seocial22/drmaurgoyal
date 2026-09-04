@@ -11,24 +11,10 @@ const HeroSection = () => {
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const containerRef = useRef(null);
-  const [containerWidth, setContainerWidth] = useState(0);
-  const slideInterval = 4000; // 5 seconds
+  const slideInterval = 4000;
   const timerRef = useRef(null);
 
-  // Update container width on mount and resize
-  useEffect(() => {
-    const updateWidth = () => {
-      if (containerRef.current) {
-        setContainerWidth(containerRef.current.clientWidth);
-      }
-    };
-    updateWidth();
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
-
-  // Auto-advance slides every 5 seconds
+  // Auto-advance slides every 4 seconds
   useEffect(() => {
     timerRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -37,38 +23,31 @@ const HeroSection = () => {
     return () => clearInterval(timerRef.current);
   }, [slides.length]);
 
-  // Slider container style for translateX effect
-  const sliderStyle = {
-    transform: `translateX(-${currentSlide * containerWidth}px)`,
-    transition: 'transform 0.7s ease-in-out',
-    display: 'flex',
-    width: `${slides.length * containerWidth}px`,
-    height: '100%',
-  };
-
-  // Each slide style to fill container width and height
-  const slideStyle = {
-    flexShrink: 0,
-    width: containerWidth ? `${containerWidth}px` : '100%',
-    height: '100%',
-    position: 'relative',
-  };
-
   return (
     <section
-      ref={containerRef}
       className="relative w-full h-screen overflow-hidden"
       aria-label="Hero image slider"
     >
-      <div style={sliderStyle}>
-        {slides.map((slide) => (
-          <div key={slide.id} style={slideStyle}>
+      <div
+        className="flex h-full w-full"
+        style={{
+          transform: `translateX(-${currentSlide * 100}%)`,
+          transition: 'transform 0.7s ease-in-out',
+        }}
+      >
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className="relative h-full w-full flex-shrink-0 min-w-full"
+          >
             <Image
               src={slide.image}
               alt={`Slide ${slide.id}`}
               fill
               className="object-cover"
-              priority
+              priority={index === 0}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              fetchPriority={index === 0 ? 'high' : 'auto'}
               sizes="100vw"
             />
           </div>

@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import 'react-multi-carousel/lib/styles.css';
 import ElfsightWidget from './ElfsightWidget';
 
 const PatientReviews = () => {

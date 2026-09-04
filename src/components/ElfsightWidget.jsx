@@ -1,22 +1,60 @@
-"use client"; // If using Next.js App Router (for Next.js 13+)
+"use client";
 
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const ElfsightWidget = () => {
+  const containerRef = useRef(null);
+  const [shouldLoad, setShouldLoad] = useState(false);
+
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js"; // Replace with your actual Elfsight script URL
-    script.async = true;
-    document.body.appendChild(script);
+    if (shouldLoad) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setShouldLoad(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px" }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    const handleUserInteraction = () => {
+      setShouldLoad(true);
+      window.removeEventListener("scroll", handleUserInteraction);
+      window.removeEventListener("touchstart", handleUserInteraction);
+    };
+
+    window.addEventListener("scroll", handleUserInteraction, { passive: true, once: true });
+    window.addEventListener("touchstart", handleUserInteraction, { passive: true, once: true });
 
     return () => {
-      document.body.removeChild(script);
+      observer.disconnect();
+      window.removeEventListener("scroll", handleUserInteraction);
+      window.removeEventListener("touchstart", handleUserInteraction);
     };
-  }, []);
+  }, [shouldLoad]);
 
-  return <div className="elfsight-app-e8774c62-d88f-49ca-bcbf-576a294c1050" data-elfsight-app-lazy></div> 
-  // <div className="elfsight-app-731163eb-89a9-4f01-87ee-c1a4d6ffdcb2" data-elfsight-app-lazy></div>
-  // Replace with the appropriate div if needed
+  useEffect(() => {
+    if (!shouldLoad) return;
+
+    if (!document.querySelector('script[src="https://static.elfsight.com/platform/platform.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://static.elfsight.com/platform/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, [shouldLoad]);
+
+  return (
+    <div ref={containerRef} className="min-h-[200px]">
+      <div className="elfsight-app-e8774c62-d88f-49ca-bcbf-576a294c1050" data-elfsight-app-lazy></div>
+    </div>
+  );
 };
 
 export default ElfsightWidget;

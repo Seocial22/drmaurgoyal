@@ -31,9 +31,9 @@ const Footer = () => {
                 <Image
                   src="/images/NewLogo.jpeg"
                   alt="Mayur Childern Hospital Logo"
-                  width={140}
-                  height={50}
-                  className="h-auto w-auto rounded-full"
+                  width={56}
+                  height={56}
+                  className="rounded-full"
                 />
               </Link>
 
@@ -250,13 +250,13 @@ const Footer = () => {
             <div className="text-gray-400 mb-4 md:mb-0 text-center md:text-left">
               © {new Date().getFullYear()} <span className="bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent font-medium">Mayur Childern Hospital</span>. All rights reserved.
             </div>
-            <p className="text-center text-gray-500">
+            <p className="text-center text-gray-400">
               Powered by{" "}
               <a
                 href="https://seocialmedia.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-teal-400 hover:underline"
               >
                 SEOcial Media Solutions
               </a>

@@ -114,9 +114,9 @@ const DoctorProfileSection = () => {
                   src="/images/second.jpg"
                   alt="Dr. Mayur Goyal - Best Child Specialist in Ajmer" 
                   fill
-                  style={{ objectFit: 'fit' }}
+                  style={{ objectFit: 'cover' }}
                   className="rounded-lg"
-                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
                 />
 
 
@@ -143,7 +143,7 @@ const DoctorProfileSection = () => {
       fill
       style={{ objectFit: 'contain' }}
       className="shadow-lg border-4 border-white rounded-[5%]"
-      priority
+      sizes="(max-width: 1200px) 50vw, 40vw"
     />
   </div>
 </div>

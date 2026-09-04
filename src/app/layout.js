@@ -52,10 +52,10 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="b3vyPuuSga8zutQF4Xvs1JrFtxC4qznp1ukGU-pvuAQ" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TYC6WTHMGF"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}

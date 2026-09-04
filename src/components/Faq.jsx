@@ -128,6 +128,10 @@ const FAQSection = () => {
           <img
             src="/images/NewLogo.jpeg"
             alt="Mayur Childern Hospital"
+            width={176}
+            height={176}
+            loading="lazy"
+            decoding="async"
             className="h-44 w-auto object-contain"
           />
         </motion.div>

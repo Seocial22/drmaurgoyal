@@ -140,7 +140,11 @@ const ImageGallerySlider = () => {
                   <div className="relative overflow-hidden rounded-xl shadow-lg bg-white">
                     <img
                       src={image.url}
-                      alt={image.title}
+                      alt={image.title || 'Mayur Hospital Gallery'}
+                      loading="lazy"
+                      decoding="async"
+                      width={500}
+                      height={384}
                       className="w-full h-96 object-contain bg-gray-100" /* Changed height from h-72 to h-96 and object-cover to object-contain to prevent cutting */
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-6">
@@ -186,7 +190,8 @@ const ImageGallerySlider = () => {
             <div className="relative max-w-6xl w-full mx-6" onClick={(e) => e.stopPropagation()}>
               <img
                 src={selectedImage.url}
-                alt={selectedImage.title}
+                alt={selectedImage.title || 'Mayur Hospital Gallery'}
+                decoding="async"
                 className="w-full h-auto max-h-screen object-contain rounded-xl shadow-2xl" /* Added max-h-screen and object-contain to ensure image fits properly */
               />
               <div className="text-white text-center mt-8"> {/* Increased margin-top */}
