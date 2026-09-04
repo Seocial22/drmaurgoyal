@@ -29,9 +29,9 @@ const PatientReviews = () => {
   };
 
   const lineExpand = {
-    hidden: { width: 0, opacity: 0 },
+    hidden: { scaleX: 0, opacity: 0 },
     visible: { 
-      width: "6rem", // 24px (w-24)
+      scaleX: 1,
       opacity: 1, 
       transition: { 
         duration: 0.8,
@@ -69,8 +69,7 @@ const PatientReviews = () => {
           initial="hidden"
           animate={titleInView ? "visible" : "hidden"}
           variants={lineExpand}
-          className="h-1 mx-auto bg-gradient-to-r from-teal-500 to-teal-300 rounded-full mb-3 md:mb-4"
-          style={{ maxWidth: "6rem" }} // Required because we're animating width instead of using tailwind w-24
+          className="h-1 w-24 mx-auto bg-gradient-to-r from-teal-500 to-teal-300 rounded-full mb-3 md:mb-4 origin-center"
         ></motion.div>
 
         {/* <motion.h3 

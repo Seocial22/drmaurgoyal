@@ -2,7 +2,6 @@
 import React, { useState, useCallback } from 'react';
 import Carousel from 'react-multi-carousel';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import 'react-multi-carousel/lib/styles.css';
 import { getDirectImageUrl } from '@/lib/utils';
 
 const ImageGallerySlider = () => {
@@ -13,7 +12,7 @@ const ImageGallerySlider = () => {
   const images = [
     {
       id: 1,
-      url: '/images/first.png',
+      url: '/images/first.webp',
       title: '',
       description: ''
     },
@@ -31,13 +30,13 @@ const ImageGallerySlider = () => {
     },
     {
       id: 4,
-      url: '/images/forth.png',
+      url: '/images/forth.webp',
       title: '',
       description: ''
     },
     {
       id: 5,
-      url: '/images/doctor.png',
+      url: '/images/doctor.webp',
       title: '',
       description: ''
     }

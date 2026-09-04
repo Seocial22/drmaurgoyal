@@ -2,26 +2,40 @@
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 
-const HeroSection = () => {
-  const slides = [
-    { id: 1, image: '/images/slide1.webp' },
-    { id: 2, image: '/images/slide2.webp' },
-    { id: 3, image: '/images/slide3.webp' },
-    { id: 4, image: '/images/slide4.webp' },
-  ];
+const slides = [
+  { id: 1, image: '/images/slide1.webp' },
+  { id: 2, image: '/images/slide2.webp' },
+  { id: 3, image: '/images/slide3.webp' },
+  { id: 4, image: '/images/slide4.webp' },
+];
 
+const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slideInterval = 4000;
+  const [isReady, setIsReady] = useState(false);
   const timerRef = useRef(null);
 
-  // Auto-advance slides every 4 seconds
+  // Mount other slides after initial render to avoid downloading them during initial paint
   useEffect(() => {
+    const readyTimer = setTimeout(() => {
+      setIsReady(true);
+    }, 1500);
+
+    return () => clearTimeout(readyTimer);
+  }, []);
+
+  // Auto-advance slides smoothly every 5.5 seconds
+  useEffect(() => {
+    if (!isReady) return;
+
     timerRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, slideInterval);
+    }, 5500);
 
     return () => clearInterval(timerRef.current);
-  }, [slides.length]);
+  }, [isReady]);
+
+  // Only render slide 1 during initial SSR/paint; render all slides once client is ready
+  const visibleSlides = isReady ? slides : [slides[0]];
 
   return (
     <section
@@ -35,7 +49,7 @@ const HeroSection = () => {
           transition: 'transform 0.7s ease-in-out',
         }}
       >
-        {slides.map((slide, index) => (
+        {visibleSlides.map((slide, index) => (
           <div
             key={slide.id}
             className="relative h-full w-full flex-shrink-0 min-w-full"
@@ -48,7 +62,8 @@ const HeroSection = () => {
               priority={index === 0}
               loading={index === 0 ? 'eager' : 'lazy'}
               fetchPriority={index === 0 ? 'high' : 'auto'}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1920px"
+              quality={75}
             />
           </div>
         ))}

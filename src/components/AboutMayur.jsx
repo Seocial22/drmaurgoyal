@@ -41,9 +41,9 @@ export default function AboutMayur() {
   };
 
   const highlightVariants = {
-    hidden: { width: 0, opacity: 0 },
+    hidden: { scaleX: 0, opacity: 0 },
     visible: {
-      width: '100%',
+      scaleX: 1,
       opacity: 0.6,
       transition: {
         duration: 0.8,
@@ -81,7 +81,7 @@ export default function AboutMayur() {
     </span>
     <br />
     <motion.span
-      className="absolute bottom-1 left-0 w-full h-2 bg-purple-200 z-0 rounded-sm"
+      className="absolute bottom-1 left-0 w-full h-2 bg-purple-200 z-0 rounded-sm origin-left"
       variants={highlightVariants}
     />
   </span>
@@ -91,7 +91,7 @@ export default function AboutMayur() {
     <span className="relative mx-2 inline-block">
       
       <motion.span
-        className="absolute bottom-1 left-0 w-full h-2 bg-purple-200 z-0 rounded-sm"
+        className="absolute bottom-1 left-0 w-full h-2 bg-purple-200 z-0 rounded-sm origin-left"
         variants={highlightVariants}
       />
     </span>
