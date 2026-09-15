@@ -12,7 +12,7 @@ const ImageGallerySlider = () => {
   const images = [
     {
       id: 1,
-      url: '/images/first.webp',
+      url: '/images/first.png',
       title: '',
       description: ''
     },
@@ -30,13 +30,13 @@ const ImageGallerySlider = () => {
     },
     {
       id: 4,
-      url: '/images/forth.webp',
+      url: '/images/forth.png',
       title: '',
       description: ''
     },
     {
       id: 5,
-      url: '/images/doctor.webp',
+      url: '/images/doctor.png',
       title: '',
       description: ''
     }
