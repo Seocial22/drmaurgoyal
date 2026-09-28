@@ -35,11 +35,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://www.drmayurkumargoyal.com',
+    url: 'https://mayurchildrenhospital.in/',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com',
+    canonical: 'https://mayurchildrenhospital.in/',
   },
   robots: {
     index: true,
@@ -68,8 +68,8 @@ const homePageSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "Mayur Children Hospital",
-  "url": "https://www.drmayurkumargoyal.com",
-  "image": "https://www.drmayurkumargoyal.com/images/dr-mayur-profile.jpg",
+  "url": "https://mayurchildrenhospital.in/",
+  "image": "https://mayurchildrenhospital.in/images/dr-mayur-profile.jpg",
   "description":
     "Mayur Children Hospital in Ajmer provides expert pediatric and neonatal care under the guidance of Dr. Mayur Kumar Goyal.",
   "medicalSpecialty": "Pediatrics",
@@ -83,8 +83,8 @@ const homePageSchema = {
     "@type": "Physician",
     "name": "Dr. Mayur Kumar Goyal",
     "jobTitle": "Pediatrician & Neonatologist",
-    "url": "https://www.drmayurkumargoyal.com",
-    "image": "https://www.drmayurkumargoyal.com/images/dr-mayur-profile.jpg",
+    "url": "https://mayurchildrenhospital.in/",
+    "image": "https://mayurchildrenhospital.in/images/dr-mayur-profile.jpg",
     "worksFor": {
       "@type": "MedicalClinic",
       "name": "Mayur Children Hospital"
