@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/how-to-swaddle',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/how-to-swaddle',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/how-to-swaddle',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/how-to-swaddle',
   },
   robots: {
     index: true,
@@ -64,11 +64,11 @@ export const metadata = {
   },
 };
 
- 
-export default function SwaddleGuidePage(){
+
+export default function SwaddleGuidePage() {
   return (
     <>
-      <SwaddleGuide/>
+      <SwaddleGuide />
     </>
   )
 }

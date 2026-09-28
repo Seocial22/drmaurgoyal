@@ -1,4 +1,4 @@
- 
+
 import NewbornSurvivalGuide from "@/components/NewbornSurvivalGuide";
 export const metadata = {
   title: 'Newborn Care Tips - Surviving the First Weeks in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/surviving-newborn-stage',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/surviving-newborn-stage',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/surviving-newborn-stage',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/surviving-newborn-stage',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function NewbornSurvivalGuidePage(){
+
+export default function NewbornSurvivalGuidePage() {
   return (
     <>
-     <NewbornSurvivalGuide/>
-     </>
+      <NewbornSurvivalGuide />
+    </>
   )
 }

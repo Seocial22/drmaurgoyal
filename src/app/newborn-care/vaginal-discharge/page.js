@@ -1,4 +1,4 @@
- 
+
 import VaginalDischargeGuide from "@/components/VaginalDischargeGuide";
 export const metadata = {
   title: 'Newborn Vaginal Discharge - Pediatric Advice in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/vaginal-discharge',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/vaginal-discharge',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/vaginal-discharge',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/vaginal-discharge',
   },
   robots: {
     index: true,
@@ -64,11 +64,11 @@ export const metadata = {
 };
 
 
- 
-export default function VaginalDischargeGuidePage(){
+
+export default function VaginalDischargeGuidePage() {
   return (
     <>
-     <VaginalDischargeGuide/>
-     </>
+      <VaginalDischargeGuide />
+    </>
   )
 }

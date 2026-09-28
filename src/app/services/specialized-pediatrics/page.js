@@ -1,8 +1,8 @@
 import SpecializedPediatrics from "@/components/SpecializedPediatrics";
 
-  
- 
- 
+
+
+
 
 
 
@@ -37,11 +37,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/specialized-pediatrics',
+    url: 'https://mayurchildrenhospital.in/services/specialized-pediatrics',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/specialized-pediatrics',
+    canonical: 'https://mayurchildrenhospital.in/services/specialized-pediatrics',
   },
   robots: {
     index: true,
@@ -72,14 +72,14 @@ export const metadata = {
 };
 
 
-export default function SpecializedPediatricsPage(){
+export default function SpecializedPediatricsPage() {
   return (
     <>
-    
 
-    <SpecializedPediatrics/>
-    
-   </>
-     
+
+      <SpecializedPediatrics />
+
+    </>
+
   )
 }

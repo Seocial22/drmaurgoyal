@@ -45,7 +45,7 @@ async function getAllBlogs() {
 }
 
 export default async function sitemap() {
-  const baseUrl = 'https://www.drmayurkumargoyal.com';
+  const baseUrl = 'https://www.mayurchildrenhospital.in';
 
   // Static pages
   const staticPages = [

@@ -31,11 +31,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/testimonials',
+    url: 'https://mayurchildrenhospital.in/testimonials',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/testimonials',
+    canonical: 'https://mayurchildrenhospital.in/testimonials',
   },
   robots: {
     index: true,
@@ -70,8 +70,8 @@ export const metadata = {
 export default function Testimonials() {
   return (
     <>
-      <TestimonialHero/>
-      <TestimonialSection/>
+      <TestimonialHero />
+      <TestimonialSection />
     </>
   );
 }

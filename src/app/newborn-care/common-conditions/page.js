@@ -1,4 +1,4 @@
- 
+
 import CommonConditionsGuide from "@/components/CommonConditionsGuide";
 export const metadata = {
   title: 'Common Newborn Conditions - Pediatric Care in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/common-conditions',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/common-conditions',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/common-conditions',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/common-conditions',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function CommonConditionsGuidePage(){
+
+export default function CommonConditionsGuidePage() {
   return (
     <>
-     <CommonConditionsGuide/>
+      <CommonConditionsGuide />
     </>
   )
 }

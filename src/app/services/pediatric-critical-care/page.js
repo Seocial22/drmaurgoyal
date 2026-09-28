@@ -1,5 +1,5 @@
- 
- 
+
+
 import PediatricCriticalCare from "@/components/PediatricCriticalCare";
 export const metadata = {
   title: 'Pediatric Critical Care in Ajmer - Dr. Mayur Goyal',
@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/pediatric-critical-care',
+    url: 'https://mayurchildrenhospital.in/services/pediatric-critical-care',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/pediatric-critical-care',
+    canonical: 'https://mayurchildrenhospital.in/services/pediatric-critical-care',
   },
   robots: {
     index: true,
@@ -65,12 +65,12 @@ export const metadata = {
 };
 
 
-export default function PediatricCriticalCarePage(){
+export default function PediatricCriticalCarePage() {
   return (
     <>
-    
-    <PediatricCriticalCare/>
-   </>
-     
+
+      <PediatricCriticalCare />
+    </>
+
   )
 }

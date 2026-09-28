@@ -9,9 +9,9 @@ import { db } from '@/firebase/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 import { getDirectImageUrl } from '@/lib/utils';
 
-const SITE_URL = "https://www.drmayurkumargoyal.com";
+const SITE_URL = "https://www.mayurchildrenhospital.in";
 const PUBLISHER_NAME = "Dr. Mayur Goyal";
-const PUBLISHER_LOGO = "https://www.drmayurkumargoyal.com/images/logo.png";
+const PUBLISHER_LOGO = "https://www.mayurchildrenhospital.in/images/logo.png";
 const DEFAULT_IMAGE = "/images/mayurchildcarecenter.png";
 
 // Function to read blogs data

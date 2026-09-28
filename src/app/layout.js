@@ -19,7 +19,7 @@ export const metadata = {
       follow: true,
     },
   },
-  metadataBase: new URL('https://drmayurkumargoyal.com'),
+  metadataBase: new URL('https://mayurchildrenhospital.in'),
   title: {
     template: '%s',
     default: 'Mayur Childern Hospital | Pediatrician in Ajmer'

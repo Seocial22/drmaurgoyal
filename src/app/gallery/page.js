@@ -1,6 +1,6 @@
 import GalleryPage from "@/components/GalleryPage";
 
- 
+
 export const metadata = {
   title: 'Clinic Photo Gallery - Dr. Mayur Goyal Child Care Ajmer',
   description:
@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/gallery',
+    url: 'https://mayurchildrenhospital.in/gallery',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/gallery',
+    canonical: 'https://mayurchildrenhospital.in/gallery',
   },
   robots: {
     index: true,
@@ -64,10 +64,10 @@ export const metadata = {
   },
 };
 
-export default function GalleryPagePage(){
+export default function GalleryPagePage() {
   return (
     <>
-     <GalleryPage/>
+      <GalleryPage />
     </>
   )
 }

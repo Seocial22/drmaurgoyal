@@ -1,5 +1,5 @@
- 
-import FirstBathGuide from "@/components/FirstBathGuide";export const metadata = {
+
+import FirstBathGuide from "@/components/FirstBathGuide"; export const metadata = {
   title: 'Newborn First Bath Guide - Pediatric Tips in Ajmer',
   description:
     'Learn how to give your newborn a safe and soothing first bath. Dr. Mayur Kumar Goyal, top pediatrician in Ajmer, shares expert bathing tips for new parents.',
@@ -28,11 +28,11 @@ import FirstBathGuide from "@/components/FirstBathGuide";export const metadata =
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/first-bath',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/first-bath',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/first-bath',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/first-bath',
   },
   robots: {
     index: true,
@@ -62,11 +62,11 @@ import FirstBathGuide from "@/components/FirstBathGuide";export const metadata =
   },
 };
 
- 
-export default function FirstBathGuidePage(){
+
+export default function FirstBathGuidePage() {
   return (
     <>
-    <FirstBathGuide/>
-     </>
+      <FirstBathGuide />
+    </>
   )
 }

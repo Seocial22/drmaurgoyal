@@ -1,4 +1,4 @@
- 
+
 import SupportServices from "@/components/SupportServices";
 export const metadata = {
   title: 'Pediatric Support Services - Best Child Hospital in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/support-services',
+    url: 'https://mayurchildrenhospital.in/services/support-services',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/support-services',
+    canonical: 'https://mayurchildrenhospital.in/services/support-services',
   },
   robots: {
     index: true,
@@ -64,10 +64,10 @@ export const metadata = {
 };
 
 
-export default function SupportServicesPage(){
+export default function SupportServicesPage() {
   return (
     <>
-     <SupportServices/>
+      <SupportServices />
     </>
   )
 }

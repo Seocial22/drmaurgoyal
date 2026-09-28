@@ -32,11 +32,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/about-us',
+    url: 'https://mayurchildrenhospital.in/about-us',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/about-us',
+    canonical: 'https://mayurchildrenhospital.in/about-us',
   },
   robots: {
     index: true,
@@ -69,7 +69,7 @@ export const metadata = {
 const aboutPageSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "url": "https://drmayurkumargoyal.com/about-us",
+  "url": "https://mayurchildrenhospital.in/about-us",
   "name": "About Dr. Mayur Kumar Goyal",
   "description":
     "Learn about Dr. Mayur Kumar Goyal, a trusted Pediatrician and Child Specialist in Ajmer providing expert healthcare for newborns, infants, children, and adolescents.",
@@ -77,8 +77,8 @@ const aboutPageSchema = {
     "@type": "Person",
     "name": "Dr. Mayur Kumar Goyal",
     "jobTitle": "Pediatrician",
-    "image": "https://drmayurkumargoyal.com/images/about-dr-mayur.jpg",
-    "url": "https://drmayurkumargoyal.com/about-us",
+    "image": "https://mayurchildrenhospital.in/images/about-dr-mayur.jpg",
+    "url": "https://mayurchildrenhospital.in/about-us",
     "worksFor": {
       "@type": "Hospital",
       "name": "Mayur Children Hospital"

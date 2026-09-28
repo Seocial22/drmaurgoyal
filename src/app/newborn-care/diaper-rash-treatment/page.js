@@ -1,4 +1,4 @@
- 
+
 import DiaperRashGuide from "@/components/DiaperRashGuide";
 export const metadata = {
   title: 'Diaper Rash Treatment for Babies - Newborn Care in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/diaper-rash-treatment',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/diaper-rash-treatment',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/diaper-rash-treatment',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/diaper-rash-treatment',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function DiaperRashGuidePage(){
+
+export default function DiaperRashGuidePage() {
   return (
     <>
-      <DiaperRashGuide/>
+      <DiaperRashGuide />
     </>
   )
 }

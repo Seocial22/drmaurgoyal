@@ -1,4 +1,4 @@
- 
+
 import NeonatologyServices from "@/components/NeonatologyServices";
 import NewbornScreening from "@/components/NewbornScreening";
 export const metadata = {
@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/neonatology-services',
+    url: 'https://mayurchildrenhospital.in/services/neonatology-services',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/neonatology-services',
+    canonical: 'https://mayurchildrenhospital.in/services/neonatology-services',
   },
   robots: {
     index: true,
@@ -65,11 +65,11 @@ export const metadata = {
 };
 
 
-export default function NeonatologyServicesPage(){
+export default function NeonatologyServicesPage() {
   return (
     <>
-    <NeonatologyServices/>
- 
+      <NeonatologyServices />
+
     </>
   )
 }

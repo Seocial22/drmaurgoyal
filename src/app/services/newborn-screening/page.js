@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/newborn-screening',
+    url: 'https://mayurchildrenhospital.in/services/newborn-screening',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/newborn-screening',
+    canonical: 'https://mayurchildrenhospital.in/services/newborn-screening',
   },
   robots: {
     index: true,
@@ -64,10 +64,10 @@ export const metadata = {
   },
 };
 
-export default function NewbornScreningPage(){
+export default function NewbornScreningPage() {
   return (
     <>
-    <NewbornScreening/>
+      <NewbornScreening />
     </>
   )
 }

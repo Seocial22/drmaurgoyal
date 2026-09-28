@@ -65,11 +65,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/blog',
+    url: 'https://mayurchildrenhospital.in/blog',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/blog',
+    canonical: 'https://mayurchildrenhospital.in/blog',
   },
   robots: {
     index: true,

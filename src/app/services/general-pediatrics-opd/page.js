@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/general-pediatrics-opd',
+    url: 'https://mayurchildrenhospital.in/services/general-pediatrics-opd',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/general-pediatrics-opd',
+    canonical: 'https://mayurchildrenhospital.in/services/general-pediatrics-opd',
   },
   robots: {
     index: true,
@@ -60,10 +60,10 @@ export const metadata = {
 };
 
 
-export default function GeneralPediatricsOPDPage(){
+export default function GeneralPediatricsOPDPage() {
   return (
     <>
-    <GeneralPediatricsOPD/>
+      <GeneralPediatricsOPD />
     </>
   )
 }

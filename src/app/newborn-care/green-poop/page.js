@@ -1,4 +1,4 @@
- 
+
 import GreenPoopGuide from "@/components/GreenPoopGuide";
 export const metadata = {
   title: 'Green Poop in Newborns - Pediatrician Advice Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/green-poop',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/green-poop',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/green-poop',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/green-poop',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function GreenPoopGuidePage(){
+
+export default function GreenPoopGuidePage() {
   return (
     <>
-      <GreenPoopGuide/>
+      <GreenPoopGuide />
     </>
   )
 }

@@ -1,4 +1,4 @@
- 
+
 import BlackPoopGuide from "@/components/BlackPoopGuide";
 export const metadata = {
   title: 'Black Poop in Newborns - Expert Pediatric Insight Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/black-poop',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/black-poop',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/black-poop',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/black-poop',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function BlackPoopGuidePage(){
+
+export default function BlackPoopGuidePage() {
   return (
     <>
-      <BlackPoopGuide/>
+      <BlackPoopGuide />
     </>
   )
 }

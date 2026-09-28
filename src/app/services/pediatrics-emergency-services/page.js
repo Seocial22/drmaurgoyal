@@ -1,6 +1,6 @@
- 
+
 import PediatricEmergencyServices from "@/components/PediatricEmergencyServices";
- 
+
 export const metadata = {
   title: 'Best Pediatric Emergency Services in Ajmer - Dr. Mayur Goyal',
   description:
@@ -30,11 +30,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/pediatrics-emergency-services',
+    url: 'https://mayurchildrenhospital.in/services/pediatrics-emergency-services',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/pediatrics-emergency-services',
+    canonical: 'https://mayurchildrenhospital.in/services/pediatrics-emergency-services',
   },
   robots: {
     index: true,
@@ -64,11 +64,11 @@ export const metadata = {
   },
 };
 
- 
-export default function PediatricEmergencyServicesPage(){
+
+export default function PediatricEmergencyServicesPage() {
   return (
     <>
-     <PediatricEmergencyServices/>
+      <PediatricEmergencyServices />
     </>
   )
 }

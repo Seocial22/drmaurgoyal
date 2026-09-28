@@ -33,11 +33,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/services/vacination-programs',
+    url: 'https://mayurchildrenhospital.in/services/vacination-programs',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/services/vacination-programs',
+    canonical: 'https://mayurchildrenhospital.in/services/vacination-programs',
   },
   robots: {
     index: true,
@@ -68,16 +68,16 @@ export const metadata = {
 };
 
 export default function Services() {
-    return (
-        <>
-        {/* <VaccinationPrograms/> */}
-            <PediatricServices />
-            <div className="bg-white">
-           <ServiceBoxes/>
-           
-           </div>
-            {/* <ServicesShowcase/> */}
-           <CarePartnerComponent/>
-        </>
-    );
+  return (
+    <>
+      {/* <VaccinationPrograms/> */}
+      <PediatricServices />
+      <div className="bg-white">
+        <ServiceBoxes />
+
+      </div>
+      {/* <ServicesShowcase/> */}
+      <CarePartnerComponent />
+    </>
+  );
 }

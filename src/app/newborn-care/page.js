@@ -31,11 +31,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/newborn-care',
+    url: 'https://mayurchildrenhospital.in/newborn-care',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/newborn-care',
+    canonical: 'https://mayurchildrenhospital.in/newborn-care',
   },
   robots: {
     index: true,
@@ -70,8 +70,8 @@ export const metadata = {
 export default function NewbornCare() {
   return (
     <>
-      <NewbornCareHero/>
-      <NewbornCareTopics/>
+      <NewbornCareHero />
+      <NewbornCareTopics />
     </>
   );
 }

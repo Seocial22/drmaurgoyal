@@ -16,7 +16,7 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://drmayurkumargoyal.com/sitemap.xml', // If you have multiple sitemaps
+      'https://mayurchildrenhospital.in/sitemap.xml', // If you have multiple sitemaps
     ],
   },
 

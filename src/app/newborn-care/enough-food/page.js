@@ -1,4 +1,4 @@
- 
+
 import EnoughFoodGuide from "@/components/EnoughFoodGuide";
 
 
@@ -32,11 +32,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/enough-food',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/enough-food',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/enough-food',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/enough-food',
   },
   robots: {
     index: true,
@@ -66,11 +66,11 @@ export const metadata = {
   },
 };
 
- 
-export default function EnoughFoodGuidePage(){
+
+export default function EnoughFoodGuidePage() {
   return (
     <>
-     <EnoughFoodGuide/>
+      <EnoughFoodGuide />
     </>
   )
 }

@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/adolescent-care',
+    url: 'https://mayurchildrenhospital.in/adolescent-care',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/adolescent-care',
+    canonical: 'https://mayurchildrenhospital.in/adolescent-care',
   },
   robots: {
     index: true,
@@ -63,10 +63,10 @@ export const metadata = {
   },
 };
 
-export default function AdolcentCarePage(){
-  return(
+export default function AdolcentCarePage() {
+  return (
     <div>
-      <AdolescentCare/>
+      <AdolescentCare />
     </div>
   )
 }

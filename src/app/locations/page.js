@@ -33,11 +33,11 @@ export const metadata = {
       },
     ],
     type: 'website',
-    url: 'https://drmayurkumargoyal.com/locations',
+    url: 'https://mayurchildrenhospital.in/locations',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://drmayurkumargoyal.com/locations',
+    canonical: 'https://mayurchildrenhospital.in/locations',
   },
   robots: {
     index: true,
@@ -68,20 +68,20 @@ export const metadata = {
 };
 
 export default function Location() {
-    return (
-<>
-<div className="bg-white">
-<LocationHero/>
-<hr className="text-[#1018281f]"/>
-<LocationMayur/>
-<hr className="text-[#1018281f]"/>
-<LocationForm/>
-<hr className="text-[#1018281f]"/>
-<FAQSection/>
-<hr className="text-[#1018281f]"/>
-      <CarePartnerComponent/>
-</div>
-</>
-    );
+  return (
+    <>
+      <div className="bg-white">
+        <LocationHero />
+        <hr className="text-[#1018281f]" />
+        <LocationMayur />
+        <hr className="text-[#1018281f]" />
+        <LocationForm />
+        <hr className="text-[#1018281f]" />
+        <FAQSection />
+        <hr className="text-[#1018281f]" />
+        <CarePartnerComponent />
+      </div>
+    </>
+  );
 
 }

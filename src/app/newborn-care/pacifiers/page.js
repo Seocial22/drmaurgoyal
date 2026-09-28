@@ -1,4 +1,4 @@
- 
+
 import PacifierGuide from "@/components/PacifierGuide";
 export const metadata = {
   title: 'Pacifiers for Newborns - Pediatric Advice in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/pacifiers',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/pacifiers',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/pacifiers',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/pacifiers',
   },
   robots: {
     index: true,
@@ -63,10 +63,10 @@ export const metadata = {
   },
 };
 
-export default function PacifierGuidePage(){
+export default function PacifierGuidePage() {
   return (
     <>
-     <PacifierGuide/>
+      <PacifierGuide />
     </>
   )
 }

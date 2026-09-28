@@ -1,4 +1,4 @@
- 
+
 import DecodingCryGuide from "@/components/DecodingCryGuide";
 export const metadata = {
   title: 'Understanding Newborn Crying - Pediatrician in Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/decoding-cry',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/decoding-cry',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/decoding-cry',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/decoding-cry',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function DecodingCryGuidePage(){
+
+export default function DecodingCryGuidePage() {
   return (
     <>
-     <DecodingCryGuide/>
+      <DecodingCryGuide />
     </>
   )
 }

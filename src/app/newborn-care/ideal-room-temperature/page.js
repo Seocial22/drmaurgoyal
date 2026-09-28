@@ -1,4 +1,4 @@
- 
+
 import RoomTemperatureGuide from "@/components/RoomTemperatureGuide";
 export const metadata = {
   title: 'Ideal Room Temperature for Newborns - Baby Care Ajmer',
@@ -29,11 +29,11 @@ export const metadata = {
       },
     ],
     type: 'article',
-    url: 'https://www.drmayurkumargoyal.com/newborn-care/ideal-room-temperature',
+    url: 'https://www.mayurchildrenhospital.in/newborn-care/ideal-room-temperature',
     siteName: 'Mayur Childern Hospital',
   },
   alternates: {
-    canonical: 'https://www.drmayurkumargoyal.com/newborn-care/ideal-room-temperature',
+    canonical: 'https://www.mayurchildrenhospital.in/newborn-care/ideal-room-temperature',
   },
   robots: {
     index: true,
@@ -63,11 +63,11 @@ export const metadata = {
   },
 };
 
- 
-export default function RoomTemperatureGuidePage(){
+
+export default function RoomTemperatureGuidePage() {
   return (
     <>
-    <RoomTemperatureGuide/>
-     </>
+      <RoomTemperatureGuide />
+    </>
   )
 }
