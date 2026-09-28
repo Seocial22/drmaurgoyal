@@ -19,6 +19,43 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'react-icons', 'framer-motion'],
   },
+
+  async redirects() {
+    return [
+      // Old domain -> new domain
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'drmayurkumargoyal.com' }],
+        destination: 'https://mayurchildrenhospital.in/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.drmayurkumargoyal.com' }],
+        destination: 'https://mayurchildrenhospital.in/:path*',
+        permanent: true,
+      },
+
+      // www -> non-www on the new domain
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.mayurchildrenhospital.in' }],
+        destination: 'https://mayurchildrenhospital.in/:path*',
+        permanent: true,
+      },
+
+      // http -> https (only works if your proxy sends x-forwarded-proto)
+      // Remove this rule if you use Cloudflare "Flexible" SSL (can cause a loop)
+      // or if your server/hosting already handles the https redirect.
+      {
+        source: '/:path*',
+        has: [{ type: 'header', key: 'x-forwarded-proto', value: 'http' }],
+        destination: 'https://mayurchildrenhospital.in/:path*',
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {
@@ -39,6 +76,12 @@ const nextConfig = {
           },
         ],
       },
+      {
+      source: '/:path*',
+      has: [{ type: 'host', value: 'www.mayurchildrenhospital.in' }],
+      destination: 'https://mayurchildrenhospital.in/:path*',
+      permanent: true,
+    },
     ];
   },
 };
