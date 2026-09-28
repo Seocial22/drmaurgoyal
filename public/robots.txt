@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /admin/
-Disallow: /dashboard
 
-Sitemap: https://drmayurkumargoyal.com/sitemap.xml
-
+Sitemap: https://mayurchildrenhospital.in/sitemap.xml
