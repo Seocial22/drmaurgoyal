@@ -6,14 +6,8 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 31536000,
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'drive.google.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-      },
+      { protocol: 'https', hostname: 'drive.google.com' },
+      { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
     ],
   },
   experimental: {
@@ -22,7 +16,6 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Old domain -> new domain
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'drmayurkumargoyal.com' }],
@@ -35,21 +28,9 @@ const nextConfig = {
         destination: 'https://mayurchildrenhospital.in/:path*',
         permanent: true,
       },
-
-      // www -> non-www on the new domain
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'www.mayurchildrenhospital.in' }],
-        destination: 'https://mayurchildrenhospital.in/:path*',
-        permanent: true,
-      },
-
-      // http -> https (only works if your proxy sends x-forwarded-proto)
-      // Remove this rule if you use Cloudflare "Flexible" SSL (can cause a loop)
-      // or if your server/hosting already handles the https redirect.
-      {
-        source: '/:path*',
-        has: [{ type: 'header', key: 'x-forwarded-proto', value: 'http' }],
         destination: 'https://mayurchildrenhospital.in/:path*',
         permanent: true,
       },
@@ -61,27 +42,15 @@ const nextConfig = {
       {
         source: '/images/:all*(svg|jpg|jpeg|png|webp|avif|gif|ico)',
         headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
       {
         source: '/:all*(woff|woff2|ttf|otf|eot)',
         headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
-      {
-      source: '/:path*',
-      has: [{ type: 'host', value: 'www.mayurchildrenhospital.in' }],
-      destination: 'https://mayurchildrenhospital.in/:path*',
-      permanent: true,
-    },
     ];
   },
 };
