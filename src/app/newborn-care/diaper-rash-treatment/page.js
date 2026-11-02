@@ -30,7 +30,7 @@ export const metadata = {
     ],
     type: 'article',
     url: 'https://www.mayurchildrenhospital.in/newborn-care/diaper-rash-treatment',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://www.mayurchildrenhospital.in/newborn-care/diaper-rash-treatment',
@@ -52,7 +52,7 @@ export const metadata = {
     images: ['/images/diaper-rash-treatment.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

@@ -33,12 +33,12 @@ export const metadata = {
         url: '/images/specialized-pediatrics.jpg',
         width: 1200,
         height: 630,
-        alt: 'Specialized pediatric services at Mayur Childern Hospital',
+        alt: 'Specialized pediatric services at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/specialized-pediatrics',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/specialized-pediatrics',
@@ -60,14 +60,14 @@ export const metadata = {
     images: ['/images/specialized-pediatrics.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page details specialized pediatric services provided by Dr. Mayur Kumar Goyal at Mayur Childern Hospital in Ajmer. From chronic illnesses to developmental assessments, we offer comprehensive child healthcare tailored to specific needs.',
+      'This page details specialized pediatric services provided by Dr. Mayur Kumar Goyal at Mayur Children Hospital in Ajmer. From chronic illnesses to developmental assessments, we offer comprehensive child healthcare tailored to specific needs.',
   },
 };
 

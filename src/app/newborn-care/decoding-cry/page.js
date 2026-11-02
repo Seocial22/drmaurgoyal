@@ -30,7 +30,7 @@ export const metadata = {
     ],
     type: 'article',
     url: 'https://www.mayurchildrenhospital.in/newborn-care/decoding-cry',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://www.mayurchildrenhospital.in/newborn-care/decoding-cry',
@@ -52,7 +52,7 @@ export const metadata = {
     images: ['/images/newborn-crying.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

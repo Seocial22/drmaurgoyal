@@ -33,7 +33,7 @@ export const metadata = {
     ],
     type: 'article',
     url: 'https://www.mayurchildrenhospital.in/newborn-care/enough-food',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://www.mayurchildrenhospital.in/newborn-care/enough-food',
@@ -55,7 +55,7 @@ export const metadata = {
     images: ['/images/newborn-feeding.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

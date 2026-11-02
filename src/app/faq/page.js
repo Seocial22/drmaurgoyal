@@ -3,7 +3,7 @@ import FAQSection from "@/components/Faq";
 export const metadata = {
   title: 'Frequently Asked Questions About Child Care - Dr. Mayur Goyal',
   description:
-    'Find answers to common questions about pediatric consultations, clinic hours, vaccination schedules, and child care services at Mayur Childern Hospital in Ajmer.',
+    'Find answers to common questions about pediatric consultations, clinic hours, vaccination schedules, and child care services at Mayur Children Hospital in Ajmer.',
   keywords: [
     'pediatric FAQ Ajmer',
     'child care questions',
@@ -17,7 +17,7 @@ export const metadata = {
     'newborn care guidance'
   ],
   openGraph: {
-    title: 'Pediatric Care FAQs in Ajmer - Mayur Childern Hospital',
+    title: 'Pediatric Care FAQs in Ajmer - Mayur Children Hospital',
     description:
       'Explore answers to frequently asked questions on child care, vaccinations, clinic timings, and pediatric visits at Dr. Mayur Goyal’s clinic in Ajmer.',
     images: [
@@ -30,7 +30,7 @@ export const metadata = {
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/faq',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/faq',
@@ -52,14 +52,14 @@ export const metadata = {
     images: ['/images/faq-page.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This FAQ page provides clear, parent-friendly answers about child care, newborn visits, immunization, pediatric checkups, and clinic operations offered at Mayur Childern Hospital in Ajmer by Dr. Mayur Kumar Goyal.',
+      'This FAQ page provides clear, parent-friendly answers about child care, newborn visits, immunization, pediatric checkups, and clinic operations offered at Mayur Children Hospital in Ajmer by Dr. Mayur Kumar Goyal.',
   },
 };
 

@@ -18,7 +18,7 @@ export const metadata = {
     'top pediatrician Ajmer'
   ],
   openGraph: {
-    title: 'Top Neonatal Care in Ajmer - Mayur Childern Hospital',
+    title: 'Top Neonatal Care in Ajmer - Mayur Children Hospital',
     description:
       'Leading neonatal care and NICU services in Ajmer by Dr. Mayur Kumar Goyal. Safe and compassionate care for premature and high-risk newborns.',
     images: [
@@ -26,12 +26,12 @@ export const metadata = {
         url: '/images/neonatology-services.jpg',
         width: 1200,
         height: 630,
-        alt: 'NICU and neonatal care at Mayur Childern Hospital',
+        alt: 'NICU and neonatal care at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/neonatology-services',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/neonatology-services',
@@ -53,14 +53,14 @@ export const metadata = {
     images: ['/images/neonatology-services.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page highlights the best neonatology and NICU services provided by Dr. Mayur Kumar Goyal at Mayur Childern Hospital in Ajmer, offering expert care for premature, low-birth-weight, and critically ill newborns.',
+      'This page highlights the best neonatology and NICU services provided by Dr. Mayur Kumar Goyal at Mayur Children Hospital in Ajmer, offering expert care for premature, low-birth-weight, and critically ill newborns.',
   },
 };
 

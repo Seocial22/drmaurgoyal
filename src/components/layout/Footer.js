@@ -30,7 +30,7 @@ const Footer = () => {
               <Link href="/" className="inline-block mb-3">
                 <Image
                   src="/images/NewLogo.jpeg"
-                  alt="Mayur Childern Hospital Logo"
+                  alt="Mayur Children Hospital Logo"
                   width={56}
                   height={56}
                   className="rounded-full"
@@ -38,7 +38,7 @@ const Footer = () => {
               </Link>
 
               <h2 className="text-lg lg:text-xl font-semibold bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent text-center lg:text-left">
-                Mayur Childern Hospital
+                Mayur Children Hospital
               </h2>
             </div>
 
@@ -212,10 +212,10 @@ const Footer = () => {
             </h3>
 
             <div className="space-y-4 w-full">
-              {/* Mayur Childern Hospital Timings */}
+              {/* Mayur Children Hospital Timings */}
               <div className="p-4 rounded-lg bg-[#1d2e2b] backdrop-blur-sm">
                 <div className="mb-3 font-medium text-white bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent text-sm">
-                  Mayur Childern Hospital
+                  Mayur Children Hospital
                 </div>
                 <div className="text-gray-200 text-sm space-y-1">
                   <p><span className="text-gray-400">Mon - Sat:</span></p>
@@ -248,7 +248,7 @@ const Footer = () => {
         <div className="border-t text-[15px] border-green-900/30 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 mb-4 md:mb-0 text-center md:text-left">
-              © {new Date().getFullYear()} <span className="bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent font-medium">Mayur Childern Hospital</span>. All rights reserved.
+              © {new Date().getFullYear()} <span className="bg-gradient-to-r from-green-400 to-teal-500 bg-clip-text text-transparent font-medium">Mayur Children Hospital</span>. All rights reserved.
             </div>
             <p className="text-center text-gray-400">
               Powered by{" "}

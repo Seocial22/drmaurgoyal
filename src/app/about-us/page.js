@@ -33,7 +33,7 @@ export const metadata = {
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/about-us',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/about-us',
@@ -51,11 +51,11 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'About Dr. Mayur Goyal - Pediatrician and Child Specialist in Ajmer',
     description:
-      'Dr. Mayur Kumar Goyal is a highly experienced child specialist in Ajmer offering compassionate pediatric services at Mayur Childern Hospital.',
+      'Dr. Mayur Kumar Goyal is a highly experienced child specialist in Ajmer offering compassionate pediatric services at Mayur Children Hospital.',
     images: ['/images/about-dr-mayur.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

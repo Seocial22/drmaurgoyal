@@ -63,7 +63,7 @@ const LocationHero = () => {
             className="uppercase text-gray-700 text-xl font-bold tracking-wider mb-4"
             variants={itemVariants}
           >
-            Mayur Childern Hospital Location
+            Mayur Children Hospital Location
           </motion.h1>
 
           <motion.h2
@@ -77,7 +77,7 @@ const LocationHero = () => {
             className="text-gray-600 mb-8 md:text-xl text-lg"
             variants={itemVariants}
           >
-            Mayur Childern Hospital is located in Ajmer and offers quality care for children. You can find us at{' '}
+            Mayur Children Hospital is located in Ajmer and offers quality care for children. You can find us at{' '}
             <a
               href="https://maps.app.goo.gl/NDoXWWTbCo3GKpsF6"
               target="_blank"

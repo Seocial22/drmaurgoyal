@@ -10,13 +10,13 @@ const ImageGallerySlider = dynamic(() => import("@/components/ImageGallerySlider
 
 export const metadata = {
   title: 'Best Pediatrician in Ajmer | Dr. Mayur Kumar Goyal',
-  description: 'Dr. Mayur Kumar Goyal, leading pediatrician and neonatologist in Ajmer, offers expert newborn care, vaccinations, and child health services at Mayur Childern Hospital.',
+  description: 'Dr. Mayur Kumar Goyal, leading pediatrician and neonatologist in Ajmer, offers expert newborn care, vaccinations, and child health services at Mayur Children Hospital.',
   keywords: [
     'best pediatrician in Ajmer',
     'child specialist doctor',
     'newborn baby doctor',
     'Dr. Mayur Kumar Goyal',
-    'Mayur Childern Hospital',
+    'Mayur Children Hospital',
     'neonatal specialist Ajmer',
     'child vaccination center',
     'pediatric clinic Ajmer',
@@ -25,7 +25,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'Top Pediatrician in Ajmer | Dr. Mayur Kumar Goyal',
-    description: 'Expert pediatric and neonatal care at Mayur Childern Hospital in Ajmer. Specializing in newborn care, immunizations, and child health services.',
+    description: 'Expert pediatric and neonatal care at Mayur Children Hospital in Ajmer. Specializing in newborn care, immunizations, and child health services.',
     images: [
       {
         url: '/images/dr-mayur-profile.jpg',
@@ -36,7 +36,7 @@ export const metadata = {
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/',
@@ -53,11 +53,11 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Best Pediatrician in Ajmer | Dr. Mayur Kumar Goyal',
-    description: 'Specialized pediatric and neonatal care at Mayur Childern Hospital, Ajmer',
+    description: 'Specialized pediatric and neonatal care at Mayur Children Hospital, Ajmer',
     images: ['/images/doctor.png'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     'author': 'Dr. Mayur Kumar Goyal',
     'generator': 'Next.js',
     'theme-color': '#ffffff',

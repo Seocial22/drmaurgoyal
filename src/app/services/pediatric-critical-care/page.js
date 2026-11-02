@@ -26,12 +26,12 @@ export const metadata = {
         url: '/images/pediatric-critical-care.jpg',
         width: 1200,
         height: 630,
-        alt: 'Child receiving critical care at Mayur Childern Hospital',
+        alt: 'Child receiving critical care at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/pediatric-critical-care',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/pediatric-critical-care',
@@ -53,14 +53,14 @@ export const metadata = {
     images: ['/images/pediatric-critical-care.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page presents pediatric critical care services by Dr. Mayur Kumar Goyal at Mayur Childern Hospital in Ajmer. Offering advanced PICU support for life-threatening illnesses, infections, trauma, and organ failure.',
+      'This page presents pediatric critical care services by Dr. Mayur Kumar Goyal at Mayur Children Hospital in Ajmer. Offering advanced PICU support for life-threatening illnesses, infections, trauma, and organ failure.',
   },
 };
 

@@ -26,12 +26,12 @@ export const metadata = {
         url: '/images/how-to-swaddle.jpg',
         width: 1200,
         height: 630,
-        alt: 'How to swaddle a newborn safely - Mayur Childern Hospital',
+        alt: 'How to swaddle a newborn safely - Mayur Children Hospital',
       },
     ],
     type: 'article',
     url: 'https://www.mayurchildrenhospital.in/newborn-care/how-to-swaddle',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://www.mayurchildrenhospital.in/newborn-care/how-to-swaddle',
@@ -53,7 +53,7 @@ export const metadata = {
     images: ['/images/how-to-swaddle.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

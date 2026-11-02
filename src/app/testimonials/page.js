@@ -32,7 +32,7 @@ export const metadata = {
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/testimonials',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/testimonials',
@@ -54,14 +54,14 @@ export const metadata = {
     images: ['/images/testimonials-cover.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This testimonials page showcases genuine feedback from parents and guardians who have experienced compassionate pediatric care at Mayur Childern Hospital in Ajmer, under the guidance of Dr. Mayur Kumar Goyal.',
+      'This testimonials page showcases genuine feedback from parents and guardians who have experienced compassionate pediatric care at Mayur Children Hospital in Ajmer, under the guidance of Dr. Mayur Kumar Goyal.',
   },
 };
 

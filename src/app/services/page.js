@@ -29,12 +29,12 @@ export const metadata = {
         url: '/images/vaccination-programs.jpg',
         width: 1200,
         height: 630,
-        alt: 'Child receiving vaccination at Mayur Childern Hospital',
+        alt: 'Child receiving vaccination at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/vacination-programs',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/vacination-programs',
@@ -56,14 +56,14 @@ export const metadata = {
     images: ['/images/vaccination-programs.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page provides details about child vaccination programs at Mayur Childern Hospital in Ajmer by Dr. Mayur Kumar Goyal - Offering safe and effective immunizations for infants, toddlers, and children as per national immunization guidelines.',
+      'This page provides details about child vaccination programs at Mayur Children Hospital in Ajmer by Dr. Mayur Kumar Goyal - Offering safe and effective immunizations for infants, toddlers, and children as per national immunization guidelines.',
   },
 };
 

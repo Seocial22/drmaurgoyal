@@ -265,7 +265,7 @@ const Navbar = () => {
                 <div className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 relative">
                   <Image
                     src="/images/NewLogo.jpeg"
-                    alt="Mayur Childern Hospital Logo"
+                    alt="Mayur Children Hospital Logo"
                     width={80}
                     height={80}
                     priority
@@ -274,7 +274,7 @@ const Navbar = () => {
                 </div>
                 <div className="ml-2">
                   <h2 className="text-lg md:text-xl font-bold bg-gradient-to-r from-[#00bcd4] via-[#9c27b0] to-[#e50087] bg-clip-text text-transparent">
-                    Mayur Childern Hospital
+                    Mayur Children Hospital
                   </h2>
                 </div>
               </Link>

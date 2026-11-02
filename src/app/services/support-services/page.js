@@ -19,18 +19,18 @@ export const metadata = {
   openGraph: {
     title: 'Child Healthcare Support Services - Pediatrician in Ajmer',
     description:
-      'Mayur Childern Hospital offers support services like parent counseling, therapy referrals, and child nutrition advice to improve pediatric health outcomes.',
+      'Mayur Children Hospital offers support services like parent counseling, therapy referrals, and child nutrition advice to improve pediatric health outcomes.',
     images: [
       {
         url: '/images/support-services.jpg',
         width: 1200,
         height: 630,
-        alt: 'Supportive pediatric services at Mayur Childern Hospital',
+        alt: 'Supportive pediatric services at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/support-services',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/support-services',
@@ -52,14 +52,14 @@ export const metadata = {
     images: ['/images/support-services.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page outlines the pediatric support services provided by Mayur Childern Hospital in Ajmer, such as developmental guidance, emotional support, and family counseling, ensuring overall well-being for every child.',
+      'This page outlines the pediatric support services provided by Mayur Children Hospital in Ajmer, such as developmental guidance, emotional support, and family counseling, ensuring overall well-being for every child.',
   },
 };
 

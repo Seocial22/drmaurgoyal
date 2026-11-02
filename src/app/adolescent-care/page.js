@@ -25,12 +25,12 @@ export const metadata = {
         url: '/images/adolescent-care.jpg',
         width: 1200,
         height: 630,
-        alt: 'Adolescent care consultation at Mayur Childern Hospital',
+        alt: 'Adolescent care consultation at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/adolescent-care',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/adolescent-care',
@@ -52,14 +52,14 @@ export const metadata = {
     images: ['/images/adolescent-care.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This page presents detailed information about adolescent health services at Mayur Childern Hospital in Ajmer. Dr. Mayur Kumar Goyal provides trusted support for teen development, mental wellness, and puberty-related health care.',
+      'This page presents detailed information about adolescent health services at Mayur Children Hospital in Ajmer. Dr. Mayur Kumar Goyal provides trusted support for teen development, mental wellness, and puberty-related health care.',
   },
 };
 

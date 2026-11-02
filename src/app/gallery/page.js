@@ -4,7 +4,7 @@ import GalleryPage from "@/components/GalleryPage";
 export const metadata = {
   title: 'Clinic Photo Gallery - Dr. Mayur Goyal Child Care Ajmer',
   description:
-    'View the photo gallery of Mayur Childern Hospital in Ajmer. Explore our pediatric clinic, child-friendly facilities, events, and compassionate healthcare environment.',
+    'View the photo gallery of Mayur Children Hospital in Ajmer. Explore our pediatric clinic, child-friendly facilities, events, and compassionate healthcare environment.',
   keywords: [
     'pediatric clinic gallery Ajmer',
     'Mayur Child Care photos',
@@ -20,18 +20,18 @@ export const metadata = {
   openGraph: {
     title: 'Photo Gallery of Pediatric Clinic - Dr. Mayur Goyal Ajmer',
     description:
-      'Discover the caring environment of Mayur Childern Hospital through our image gallery. See our facilities, staff, and pediatric care in action.',
+      'Discover the caring environment of Mayur Children Hospital through our image gallery. See our facilities, staff, and pediatric care in action.',
     images: [
       {
         url: '/images/gallery-cover.jpg',
         width: 1200,
         height: 630,
-        alt: 'Photo collage of Mayur Childern Hospital in Ajmer',
+        alt: 'Photo collage of Mayur Children Hospital in Ajmer',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/gallery',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/gallery',
@@ -53,14 +53,14 @@ export const metadata = {
     images: ['/images/gallery-cover.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
   },
   about: {
     description:
-      'This gallery page highlights the environment, pediatric care rooms, and facilities available at Mayur Childern Hospital in Ajmer. A visual insight into the compassionate healthcare experience provided by Dr. Mayur Kumar Goyal.',
+      'This gallery page highlights the environment, pediatric care rooms, and facilities available at Mayur Children Hospital in Ajmer. A visual insight into the compassionate healthcare experience provided by Dr. Mayur Kumar Goyal.',
   },
 };
 

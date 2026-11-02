@@ -128,7 +128,7 @@ const PediatricTherapySection = () => {
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
             >
-              At Mayur Childern Hospital, every child is at the heart of everything we do.
+              At Mayur Children Hospital, every child is at the heart of everything we do.
             </motion.h2>
             
             <motion.p 

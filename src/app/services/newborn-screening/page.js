@@ -26,12 +26,12 @@ export const metadata = {
         url: '/images/newborn-screening.jpg',
         width: 1200,
         height: 630,
-        alt: 'Newborn screening test at Mayur Childern Hospital',
+        alt: 'Newborn screening test at Mayur Children Hospital',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/services/newborn-screening',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/services/newborn-screening',
@@ -49,11 +49,11 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Newborn Screening Services - Newborn Doctor in Ajmer',
     description:
-      'Early detection of hidden health conditions in newborns at Mayur Childern Hospital. Safe and accurate screening for better baby health.',
+      'Early detection of hidden health conditions in newborns at Mayur Children Hospital. Safe and accurate screening for better baby health.',
     images: ['/images/newborn-screening.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',

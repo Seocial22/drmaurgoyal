@@ -21,7 +21,7 @@ export const metadata = {
     'pediatric clinics near me Ajmer'
   ],
   openGraph: {
-    title: 'Our Clinic Locations - Mayur Childern Hospital in Ajmer',
+    title: 'Our Clinic Locations - Mayur Children Hospital in Ajmer',
     description:
       'Explore all pediatric clinic locations in Ajmer by Dr. Mayur Kumar Goyal. Easily access newborn care, child specialist consultations, and vaccinations.',
     images: [
@@ -29,12 +29,12 @@ export const metadata = {
         url: '/images/clinic-locations.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mayur Childern Hospital Locations in Ajmer',
+        alt: 'Mayur Children Hospital Locations in Ajmer',
       },
     ],
     type: 'website',
     url: 'https://mayurchildrenhospital.in/locations',
-    siteName: 'Mayur Childern Hospital',
+    siteName: 'Mayur Children Hospital',
   },
   alternates: {
     canonical: 'https://mayurchildrenhospital.in/locations',
@@ -52,11 +52,11 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Pediatric Clinic Locations in Ajmer - Dr. Mayur Goyal',
     description:
-      'Get location details for Mayur Childern Hospital in Ajmer. Trusted pediatrician and child specialist available across multiple clinic centers.',
+      'Get location details for Mayur Children Hospital in Ajmer. Trusted pediatrician and child specialist available across multiple clinic centers.',
     images: ['/images/clinic-locations.jpg'],
   },
   other: {
-    'application-name': 'Mayur Childern Hospital',
+    'application-name': 'Mayur Children Hospital',
     author: 'Dr. Mayur Kumar Goyal',
     generator: 'Next.js',
     'theme-color': '#ffffff',
