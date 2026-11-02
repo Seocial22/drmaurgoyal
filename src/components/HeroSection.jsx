@@ -4,9 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 
 const slides = [
   { id: 1, image: '/images/slide1.webp' },
-  { id: 2, image: '/images/slide2.webp' },
-  { id: 3, image: '/images/slide3.webp' },
-  { id: 4, image: '/images/slide4.webp' },
+  { id: 2, image: '/images/slide2.webp' }
 ];
 
 const HeroSection = () => {
